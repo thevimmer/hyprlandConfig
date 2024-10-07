@@ -1,4 +1,4 @@
-# hyperland_desktop
+# hyperlandConfig
 ## Requirements
 - hyprland
 - foot
