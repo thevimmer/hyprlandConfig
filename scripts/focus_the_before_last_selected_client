@@ -1,0 +1,9 @@
+#!/bin/bash
+
+window=$(hyprctl clients | awk '
+/Window/ { window_id=$2 }
+/focusHistoryID: 1/ { print window_id }')
+
+if [ -n "$window" ]; then
+  hyprctl dispatch focuswindow "$window"
+fi
